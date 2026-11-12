@@ -1,0 +1,56 @@
+GLOBAL FLOOD DATA CLEANING REPORT
+==========================================
+Original rows: 4308
+Original columns: 12
+Cleaning library: Python built-in csv (pandas not required)
+
+Exact duplicate rows removed: 0
+Rows in cleaned dataset: 4308
+
+Invalid negative numeric values changed to blank:
+  Year: 0
+  Deaths_REAL: 0
+  Injured_REAL: 0
+  Total_Affected_REAL: 0
+  Relief_Camps_SIMULATED: 0
+  People_Sheltered_SIMULATED: 0
+  Houses_Damaged_SIMULATED: 0
+  Food_Requirement_kg_SIMULATED: 0
+  Water_Requirement_Litres_SIMULATED: 0
+  Medical_Kits_SIMULATED: 0
+
+Unparseable numeric values changed to blank:
+  Year: 0
+  Deaths_REAL: 0
+  Injured_REAL: 0
+  Total_Affected_REAL: 0
+  Relief_Camps_SIMULATED: 0
+  People_Sheltered_SIMULATED: 0
+  Houses_Damaged_SIMULATED: 0
+  Food_Requirement_kg_SIMULATED: 0
+  Water_Requirement_Litres_SIMULATED: 0
+  Medical_Kits_SIMULATED: 0
+
+Invalid years (not whole years 1900-2100) changed to blank: 0
+
+Blank values in cleaned output:
+  Record_ID: 0
+  Country: 0
+  Year: 0
+  Deaths_REAL: 1147
+  Injured_REAL: 3428
+  Total_Affected_REAL: 413
+  Relief_Camps_SIMULATED: 413
+  People_Sheltered_SIMULATED: 413
+  Houses_Damaged_SIMULATED: 413
+  Food_Requirement_kg_SIMULATED: 413
+  Water_Requirement_Litres_SIMULATED: 413
+  Medical_Kits_SIMULATED: 413
+
+DATA NOTE:
+REAL columns are recorded impact fields in the supplied dataset.
+SIMULATED columns are planning estimates, not verified real outcomes.
+Missing values are left blank; no disaster values are guessed or replaced with zero.
+The original CSV was not modified.
+
+Cleaned file: Global_Flood_Cleaned.csv
